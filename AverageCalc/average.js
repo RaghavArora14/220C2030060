@@ -1,4 +1,4 @@
-// averageCalculator.js (ESM)
+
 import express from 'express';
 
 const app = express();
@@ -99,11 +99,11 @@ app.get('/numbers/:type', (req, res) => {
   });
 });
 
-// Export the app for testing
+
 export { app };
 
-// If this file is run directly via "node averageCalculator.js", start the server:
-if (import.meta.url === process.argv[1] /* or process.argv[1].endsWith('averageCalculator.js') */) {
+
+if (import.meta.url === process.argv[1]) {
   app.listen(PORT, () => {
     console.log(`Average Calculator Microservice running on port ${PORT}`);
   });
