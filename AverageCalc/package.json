@@ -4,7 +4,7 @@
   "main": "average.js",
   "type": "module",
   "scripts": {
-    "start": "average.js",
+    "start": "node average.js",
     "test": "mocha --timeout 5000"
   },
   "author": "",
